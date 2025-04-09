@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D4DD7B242DA602C900FEA5C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD7B212DA602C900FEA5C6 /* ContentView.swift */; };
+		D4DD7B252DA602C900FEA5C6 /* snow_seekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD7B222DA602C900FEA5C6 /* snow_seekerApp.swift */; };
+		D4DD7B262DA602C900FEA5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D4DD7B042DA602B200FEA5C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +33,12 @@
 		D4DD7AF62DA602B200FEA5C6 /* snow-seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snow-seeker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DD7B032DA602B200FEA5C6 /* snow-seekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "snow-seekerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DD7B0D2DA602B200FEA5C6 /* snow-seekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "snow-seekerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4DD7B212DA602C900FEA5C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4DD7B222DA602C900FEA5C6 /* snow_seekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snow_seekerApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D4DD7AF82DA602B200FEA5C6 /* snow-seeker */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "snow-seeker";
-			sourceTree = "<group>";
-		};
 		D4DD7B062DA602B200FEA5C6 /* snow-seekerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "snow-seekerTests";
@@ -75,7 +79,7 @@
 		D4DD7AED2DA602B200FEA5C6 = {
 			isa = PBXGroup;
 			children = (
-				D4DD7AF82DA602B200FEA5C6 /* snow-seeker */,
+				D4DD7B232DA602C900FEA5C6 /* snow-seeker */,
 				D4DD7B062DA602B200FEA5C6 /* snow-seekerTests */,
 				D4DD7B102DA602B200FEA5C6 /* snow-seekerUITests */,
 				D4DD7AF72DA602B200FEA5C6 /* Products */,
@@ -92,6 +96,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D4DD7B232DA602C900FEA5C6 /* snow-seeker */ = {
+			isa = PBXGroup;
+			children = (
+				D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */,
+				D4DD7B212DA602C900FEA5C6 /* ContentView.swift */,
+				D4DD7B222DA602C900FEA5C6 /* snow_seekerApp.swift */,
+			);
+			path = "snow-seeker";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +120,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D4DD7AF82DA602B200FEA5C6 /* snow-seeker */,
 			);
 			name = "snow-seeker";
 			packageProductDependencies = (
@@ -212,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DD7B262DA602C900FEA5C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DD7B242DA602C900FEA5C6 /* ContentView.swift in Sources */,
+				D4DD7B252DA602C900FEA5C6 /* snow_seekerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +414,13 @@
 				DEVELOPMENT_TEAM = 47E3RRLYKE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SnowSeeker;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +428,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emiyaconsulting.snow-seeker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,11 +448,13 @@
 				DEVELOPMENT_TEAM = 47E3RRLYKE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SnowSeeker;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +462,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.emiyaconsulting.snow-seeker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
