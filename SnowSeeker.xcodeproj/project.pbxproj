@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4DD7B242DA602C900FEA5C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD7B212DA602C900FEA5C6 /* ContentView.swift */; };
-		D4DD7B252DA602C900FEA5C6 /* snow_seekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD7B222DA602C900FEA5C6 /* snow_seekerApp.swift */; };
+		D44EC1EE2DC99CBB00930263 /* ContentViewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EC1ED2DC99CBB00930263 /* ContentViewSearch.swift */; };
+		D44EC1F02DC9A04300930263 /* ContentViewObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EC1EF2DC9A04300930263 /* ContentViewObservable.swift */; };
+		D44EC1F22DC9A3AA00930263 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EC1F12DC9A3AA00930263 /* ContentView.swift */; };
+		D4C35DE82DB1D48C006967BB /* ContentViewM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C35DE72DB1D48C006967BB /* ContentViewM.swift */; };
+		D4DD7B242DA602C900FEA5C6 /* ContentViewR.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD7B212DA602C900FEA5C6 /* ContentViewR.swift */; };
+		D4DD7B252DA602C900FEA5C6 /* SnowSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD7B222DA602C900FEA5C6 /* SnowSeekerApp.swift */; };
 		D4DD7B262DA602C900FEA5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -30,12 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D4DD7AF62DA602B200FEA5C6 /* snow-seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snow-seeker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4DD7B032DA602B200FEA5C6 /* snow-seekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "snow-seekerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4DD7B0D2DA602B200FEA5C6 /* snow-seekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "snow-seekerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44EC1ED2DC99CBB00930263 /* ContentViewSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewSearch.swift; sourceTree = "<group>"; };
+		D44EC1EF2DC9A04300930263 /* ContentViewObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewObservable.swift; sourceTree = "<group>"; };
+		D44EC1F12DC9A3AA00930263 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4C35DE72DB1D48C006967BB /* ContentViewM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewM.swift; sourceTree = "<group>"; };
+		D4DD7AF62DA602B200FEA5C6 /* SnowSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DD7B032DA602B200FEA5C6 /* SnowSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DD7B0D2DA602B200FEA5C6 /* SnowSeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowSeekerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4DD7B212DA602C900FEA5C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D4DD7B222DA602C900FEA5C6 /* snow_seekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snow_seekerApp.swift; sourceTree = "<group>"; };
+		D4DD7B212DA602C900FEA5C6 /* ContentViewR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewR.swift; sourceTree = "<group>"; };
+		D4DD7B222DA602C900FEA5C6 /* SnowSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowSeekerApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -79,7 +87,7 @@
 		D4DD7AED2DA602B200FEA5C6 = {
 			isa = PBXGroup;
 			children = (
-				D4DD7B232DA602C900FEA5C6 /* snow-seeker */,
+				D4DD7B232DA602C900FEA5C6 /* SnowSeeker */,
 				D4DD7B062DA602B200FEA5C6 /* snow-seekerTests */,
 				D4DD7B102DA602B200FEA5C6 /* snow-seekerUITests */,
 				D4DD7AF72DA602B200FEA5C6 /* Products */,
@@ -89,29 +97,33 @@
 		D4DD7AF72DA602B200FEA5C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4DD7AF62DA602B200FEA5C6 /* snow-seeker.app */,
-				D4DD7B032DA602B200FEA5C6 /* snow-seekerTests.xctest */,
-				D4DD7B0D2DA602B200FEA5C6 /* snow-seekerUITests.xctest */,
+				D4DD7AF62DA602B200FEA5C6 /* SnowSeeker.app */,
+				D4DD7B032DA602B200FEA5C6 /* SnowSeekerTests.xctest */,
+				D4DD7B0D2DA602B200FEA5C6 /* SnowSeekerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4DD7B232DA602C900FEA5C6 /* snow-seeker */ = {
+		D4DD7B232DA602C900FEA5C6 /* SnowSeeker */ = {
 			isa = PBXGroup;
 			children = (
 				D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */,
-				D4DD7B212DA602C900FEA5C6 /* ContentView.swift */,
-				D4DD7B222DA602C900FEA5C6 /* snow_seekerApp.swift */,
+				D4DD7B212DA602C900FEA5C6 /* ContentViewR.swift */,
+				D4C35DE72DB1D48C006967BB /* ContentViewM.swift */,
+				D44EC1ED2DC99CBB00930263 /* ContentViewSearch.swift */,
+				D44EC1EF2DC9A04300930263 /* ContentViewObservable.swift */,
+				D4DD7B222DA602C900FEA5C6 /* SnowSeekerApp.swift */,
+				D44EC1F12DC9A3AA00930263 /* ContentView.swift */,
 			);
-			path = "snow-seeker";
+			path = SnowSeeker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4DD7AF52DA602B200FEA5C6 /* snow-seeker */ = {
+		D4DD7AF52DA602B200FEA5C6 /* SnowSeeker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4DD7B172DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "snow-seeker" */;
+			buildConfigurationList = D4DD7B172DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "SnowSeeker" */;
 			buildPhases = (
 				D4DD7AF22DA602B200FEA5C6 /* Sources */,
 				D4DD7AF32DA602B200FEA5C6 /* Frameworks */,
@@ -121,16 +133,16 @@
 			);
 			dependencies = (
 			);
-			name = "snow-seeker";
+			name = SnowSeeker;
 			packageProductDependencies = (
 			);
 			productName = "snow-seeker";
-			productReference = D4DD7AF62DA602B200FEA5C6 /* snow-seeker.app */;
+			productReference = D4DD7AF62DA602B200FEA5C6 /* SnowSeeker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4DD7B022DA602B200FEA5C6 /* snow-seekerTests */ = {
+		D4DD7B022DA602B200FEA5C6 /* SnowSeekerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4DD7B1A2DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "snow-seekerTests" */;
+			buildConfigurationList = D4DD7B1A2DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "SnowSeekerTests" */;
 			buildPhases = (
 				D4DD7AFF2DA602B200FEA5C6 /* Sources */,
 				D4DD7B002DA602B200FEA5C6 /* Frameworks */,
@@ -144,16 +156,16 @@
 			fileSystemSynchronizedGroups = (
 				D4DD7B062DA602B200FEA5C6 /* snow-seekerTests */,
 			);
-			name = "snow-seekerTests";
+			name = SnowSeekerTests;
 			packageProductDependencies = (
 			);
 			productName = "snow-seekerTests";
-			productReference = D4DD7B032DA602B200FEA5C6 /* snow-seekerTests.xctest */;
+			productReference = D4DD7B032DA602B200FEA5C6 /* SnowSeekerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D4DD7B0C2DA602B200FEA5C6 /* snow-seekerUITests */ = {
+		D4DD7B0C2DA602B200FEA5C6 /* SnowSeekerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4DD7B1D2DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "snow-seekerUITests" */;
+			buildConfigurationList = D4DD7B1D2DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "SnowSeekerUITests" */;
 			buildPhases = (
 				D4DD7B092DA602B200FEA5C6 /* Sources */,
 				D4DD7B0A2DA602B200FEA5C6 /* Frameworks */,
@@ -167,11 +179,11 @@
 			fileSystemSynchronizedGroups = (
 				D4DD7B102DA602B200FEA5C6 /* snow-seekerUITests */,
 			);
-			name = "snow-seekerUITests";
+			name = SnowSeekerUITests;
 			packageProductDependencies = (
 			);
 			productName = "snow-seekerUITests";
-			productReference = D4DD7B0D2DA602B200FEA5C6 /* snow-seekerUITests.xctest */;
+			productReference = D4DD7B0D2DA602B200FEA5C6 /* SnowSeekerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4DD7AF12DA602B200FEA5C6 /* Build configuration list for PBXProject "snow-seeker" */;
+			buildConfigurationList = D4DD7AF12DA602B200FEA5C6 /* Build configuration list for PBXProject "SnowSeeker" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -211,9 +223,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4DD7AF52DA602B200FEA5C6 /* snow-seeker */,
-				D4DD7B022DA602B200FEA5C6 /* snow-seekerTests */,
-				D4DD7B0C2DA602B200FEA5C6 /* snow-seekerUITests */,
+				D4DD7AF52DA602B200FEA5C6 /* SnowSeeker */,
+				D4DD7B022DA602B200FEA5C6 /* SnowSeekerTests */,
+				D4DD7B0C2DA602B200FEA5C6 /* SnowSeekerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,8 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DD7B242DA602C900FEA5C6 /* ContentView.swift in Sources */,
-				D4DD7B252DA602C900FEA5C6 /* snow_seekerApp.swift in Sources */,
+				D4DD7B242DA602C900FEA5C6 /* ContentViewR.swift in Sources */,
+				D44EC1F02DC9A04300930263 /* ContentViewObservable.swift in Sources */,
+				D44EC1F22DC9A3AA00930263 /* ContentView.swift in Sources */,
+				D4C35DE82DB1D48C006967BB /* ContentViewM.swift in Sources */,
+				D44EC1EE2DC99CBB00930263 /* ContentViewSearch.swift in Sources */,
+				D4DD7B252DA602C900FEA5C6 /* SnowSeekerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +288,12 @@
 /* Begin PBXTargetDependency section */
 		D4DD7B052DA602B200FEA5C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4DD7AF52DA602B200FEA5C6 /* snow-seeker */;
+			target = D4DD7AF52DA602B200FEA5C6 /* SnowSeeker */;
 			targetProxy = D4DD7B042DA602B200FEA5C6 /* PBXContainerItemProxy */;
 		};
 		D4DD7B0F2DA602B200FEA5C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4DD7AF52DA602B200FEA5C6 /* snow-seeker */;
+			target = D4DD7AF52DA602B200FEA5C6 /* SnowSeeker */;
 			targetProxy = D4DD7B0E2DA602B200FEA5C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -487,7 +503,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snow-seeker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/snow-seeker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnowSeeker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnowSeeker";
 			};
 			name = Debug;
 		};
@@ -506,7 +522,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snow-seeker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/snow-seeker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnowSeeker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnowSeeker";
 			};
 			name = Release;
 		};
@@ -547,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4DD7AF12DA602B200FEA5C6 /* Build configuration list for PBXProject "snow-seeker" */ = {
+		D4DD7AF12DA602B200FEA5C6 /* Build configuration list for PBXProject "SnowSeeker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4DD7B152DA602B200FEA5C6 /* Debug */,
@@ -556,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4DD7B172DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "snow-seeker" */ = {
+		D4DD7B172DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "SnowSeeker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4DD7B182DA602B200FEA5C6 /* Debug */,
@@ -565,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4DD7B1A2DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "snow-seekerTests" */ = {
+		D4DD7B1A2DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "SnowSeekerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4DD7B1B2DA602B200FEA5C6 /* Debug */,
@@ -574,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4DD7B1D2DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "snow-seekerUITests" */ = {
+		D4DD7B1D2DA602B200FEA5C6 /* Build configuration list for PBXNativeTarget "SnowSeekerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4DD7B1E2DA602B200FEA5C6 /* Debug */,
