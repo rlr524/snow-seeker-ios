@@ -6,16 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		D44EC1EE2DC99CBB00930263 /* ContentViewSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EC1ED2DC99CBB00930263 /* ContentViewSearch.swift */; };
-		D44EC1F02DC9A04300930263 /* ContentViewObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EC1EF2DC9A04300930263 /* ContentViewObservable.swift */; };
-		D44EC1F22DC9A3AA00930263 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EC1F12DC9A3AA00930263 /* ContentView.swift */; };
-		D4C35DE82DB1D48C006967BB /* ContentViewM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C35DE72DB1D48C006967BB /* ContentViewM.swift */; };
-		D4DD7B242DA602C900FEA5C6 /* ContentViewR.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD7B212DA602C900FEA5C6 /* ContentViewR.swift */; };
-		D4DD7B252DA602C900FEA5C6 /* SnowSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD7B222DA602C900FEA5C6 /* SnowSeekerApp.swift */; };
-		D4DD7B262DA602C900FEA5C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		D4DD7B042DA602B200FEA5C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -34,19 +24,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D44EC1ED2DC99CBB00930263 /* ContentViewSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewSearch.swift; sourceTree = "<group>"; };
-		D44EC1EF2DC9A04300930263 /* ContentViewObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewObservable.swift; sourceTree = "<group>"; };
-		D44EC1F12DC9A3AA00930263 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D4C35DE72DB1D48C006967BB /* ContentViewM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewM.swift; sourceTree = "<group>"; };
 		D4DD7AF62DA602B200FEA5C6 /* SnowSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DD7B032DA602B200FEA5C6 /* SnowSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DD7B0D2DA602B200FEA5C6 /* SnowSeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowSeekerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4DD7B212DA602C900FEA5C6 /* ContentViewR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewR.swift; sourceTree = "<group>"; };
-		D4DD7B222DA602C900FEA5C6 /* SnowSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowSeekerApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D4906B282DCAE638006B4A8E /* Exceptions for "SnowSeeker" folder in "SnowSeeker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				"Bundle-Decodable.swift",
+				ContentView.swift,
+				Practice/ContentViewM.swift,
+				Practice/ContentViewObservable.swift,
+				Practice/ContentViewR.swift,
+				Practice/ContentViewSearch.swift,
+				Resort.swift,
+				resorts.json,
+				SnowSeekerApp.swift,
+			);
+			target = D4DD7AF52DA602B200FEA5C6 /* SnowSeeker */;
+		};
+		D4906B292DCAE638006B4A8E /* Exceptions for "SnowSeeker" folder in "SnowSeekerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				"Bundle-Decodable.swift",
+				ContentView.swift,
+				Practice/ContentViewM.swift,
+				Practice/ContentViewObservable.swift,
+				Practice/ContentViewR.swift,
+				Practice/ContentViewSearch.swift,
+				Resort.swift,
+				resorts.json,
+				SnowSeekerApp.swift,
+			);
+			target = D4DD7B022DA602B200FEA5C6 /* SnowSeekerTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D4906B1E2DCAE638006B4A8E /* SnowSeeker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D4906B282DCAE638006B4A8E /* Exceptions for "SnowSeeker" folder in "SnowSeeker" target */,
+				D4906B292DCAE638006B4A8E /* Exceptions for "SnowSeeker" folder in "SnowSeekerTests" target */,
+			);
+			path = SnowSeeker;
+			sourceTree = "<group>";
+		};
 		D4DD7B062DA602B200FEA5C6 /* snow-seekerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "snow-seekerTests";
@@ -87,7 +114,7 @@
 		D4DD7AED2DA602B200FEA5C6 = {
 			isa = PBXGroup;
 			children = (
-				D4DD7B232DA602C900FEA5C6 /* SnowSeeker */,
+				D4906B1E2DCAE638006B4A8E /* SnowSeeker */,
 				D4DD7B062DA602B200FEA5C6 /* snow-seekerTests */,
 				D4DD7B102DA602B200FEA5C6 /* snow-seekerUITests */,
 				D4DD7AF72DA602B200FEA5C6 /* Products */,
@@ -102,20 +129,6 @@
 				D4DD7B0D2DA602B200FEA5C6 /* SnowSeekerUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D4DD7B232DA602C900FEA5C6 /* SnowSeeker */ = {
-			isa = PBXGroup;
-			children = (
-				D4DD7B202DA602C900FEA5C6 /* Assets.xcassets */,
-				D4DD7B212DA602C900FEA5C6 /* ContentViewR.swift */,
-				D4C35DE72DB1D48C006967BB /* ContentViewM.swift */,
-				D44EC1ED2DC99CBB00930263 /* ContentViewSearch.swift */,
-				D44EC1EF2DC9A04300930263 /* ContentViewObservable.swift */,
-				D4DD7B222DA602C900FEA5C6 /* SnowSeekerApp.swift */,
-				D44EC1F12DC9A3AA00930263 /* ContentView.swift */,
-			);
-			path = SnowSeeker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +167,7 @@
 				D4DD7B052DA602B200FEA5C6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
+				D4906B1E2DCAE638006B4A8E /* SnowSeeker */,
 				D4DD7B062DA602B200FEA5C6 /* snow-seekerTests */,
 			);
 			name = SnowSeekerTests;
@@ -235,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DD7B262DA602C900FEA5C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,12 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DD7B242DA602C900FEA5C6 /* ContentViewR.swift in Sources */,
-				D44EC1F02DC9A04300930263 /* ContentViewObservable.swift in Sources */,
-				D44EC1F22DC9A3AA00930263 /* ContentView.swift in Sources */,
-				D4C35DE82DB1D48C006967BB /* ContentViewM.swift in Sources */,
-				D44EC1EE2DC99CBB00930263 /* ContentViewSearch.swift in Sources */,
-				D4DD7B252DA602C900FEA5C6 /* SnowSeekerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
