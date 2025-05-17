@@ -41,8 +41,12 @@
 				Practice/ContentViewR.swift,
 				Practice/ContentViewSearch.swift,
 				Resort.swift,
+				ResortDetailsView.swift,
 				resorts.json,
+				ResortView.swift,
+				SkiDetailsView.swift,
 				SnowSeekerApp.swift,
+				WelcomeView.swift,
 			);
 			target = D4DD7AF52DA602B200FEA5C6 /* SnowSeeker */;
 		};
@@ -57,8 +61,12 @@
 				Practice/ContentViewR.swift,
 				Practice/ContentViewSearch.swift,
 				Resort.swift,
+				ResortDetailsView.swift,
 				resorts.json,
+				ResortView.swift,
+				SkiDetailsView.swift,
 				SnowSeekerApp.swift,
+				WelcomeView.swift,
 			);
 			target = D4DD7B022DA602B200FEA5C6 /* SnowSeekerTests */;
 		};
