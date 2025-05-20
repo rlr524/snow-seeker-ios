@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ResortView: View {
     let resort: Resort
+    @State private var selectedFacility: Facility?
+    @State private var showingFacility = false
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.dynamicTypeSize) var dynamicTypeSize
+    
     
     var body: some View {
         ScrollView {
@@ -39,8 +42,18 @@ struct ResortView: View {
                     Text("Facilities")
                         .font(.headline)
                     
-                    Text(resort.facilities, format: .list(type: .and))
-                        .padding(.vertical)
+                    HStack {
+                        ForEach(resort.facilityTypes) { facility in
+                            Button {
+                                selectedFacility = facility
+                                showingFacility = true
+                            } label: {
+                                facility.icon
+                                    .font(.title)
+                            }
+                        }
+                    }
+                    .padding(.vertical)
                 }
                 .padding(.horizontal)
             }
@@ -48,6 +61,17 @@ struct ResortView: View {
         }
         .navigationTitle("\(resort.name), \(resort.country)")
         .navigationBarTitleDisplayMode(.inline)
+        .alert(
+            selectedFacility?.name ?? "More Information",
+            isPresented: $showingFacility,
+            presenting: selectedFacility
+            // Using _ in here for the alert's action closure because we don't actually care
+            // about getting the unwrapped Facility instance here, but it is important
+            // in the message closure so we can display the correct description.
+        ) { _ in
+        } message: { facility in
+            Text(facility.description)
+        }
     }
 }
 
