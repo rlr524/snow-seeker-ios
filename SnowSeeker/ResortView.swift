@@ -13,6 +13,7 @@ struct ResortView: View {
     @State private var showingFacility = false
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.dynamicTypeSize) var dynamicTypeSize
+    @Environment(Favorites.self) var favorites
 
     var body: some View {
         ScrollView {
@@ -71,9 +72,20 @@ struct ResortView: View {
         } message: { facility in
             Text(facility.description)
         }
+
+        Button(favorites.contains(resort) ? "Remove from Favorites" : "Add to Favorites") {
+            if favorites.contains(resort) {
+                favorites.remove(resort)
+            } else {
+                favorites.add(resort)
+            }
+        }
+        .buttonStyle(.borderedProminent)
+        .padding()
     }
 }
 
 #Preview {
     ResortView(resort: .example)
+        .environment(Favorites())
 }
