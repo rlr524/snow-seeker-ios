@@ -8,7 +8,6 @@
 import XCTest
 
 final class snow_seekerUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }

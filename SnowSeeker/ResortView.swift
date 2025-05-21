@@ -13,18 +13,18 @@ struct ResortView: View {
     @State private var showingFacility = false
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.dynamicTypeSize) var dynamicTypeSize
-    
-    
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
                 Image(decorative: resort.id)
                     .resizable()
                     .scaledToFit()
-                
+
                 HStack {
                     if horizontalSizeClass == .compact
-                        && dynamicTypeSize > .large {
+                        && dynamicTypeSize > .large
+                    {
                         VStack(spacing: 10) { ResortDetailsView(resort: resort) }
                         VStack(spacing: 10) { SkiDetailsView(resort: resort) }
                     } else {
@@ -34,14 +34,14 @@ struct ResortView: View {
                 }
                 .padding(.vertical)
                 .background(.primary.opacity(0.1))
-                
+
                 Group {
                     Text(resort.description)
                         .padding(.vertical)
-                    
+
                     Text("Facilities")
                         .font(.headline)
-                    
+
                     HStack {
                         ForEach(resort.facilityTypes) { facility in
                             Button {
@@ -57,7 +57,6 @@ struct ResortView: View {
                 }
                 .padding(.horizontal)
             }
-
         }
         .navigationTitle("\(resort.name), \(resort.country)")
         .navigationBarTitleDisplayMode(.inline)

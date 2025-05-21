@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     @State private var searchText = ""
-    
+
     var filteredResults: [Resort] {
         if searchText.isEmpty {
             resorts
@@ -18,7 +18,7 @@ struct ContentView: View {
             resorts.filter { $0.name.localizedStandardContains(searchText) }
         }
     }
-    
+
     var body: some View {
         NavigationSplitView {
             List(filteredResults) { resort in

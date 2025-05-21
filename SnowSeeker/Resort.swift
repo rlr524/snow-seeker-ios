@@ -19,13 +19,13 @@ struct Resort: Codable, Hashable, Identifiable {
     var elevation: Int
     var runs: Int
     var facilities: [String]
-    
+
     // Create instances of Facility for every facility in a Resort. Remember, we initialize
     // an instance by just calling .init on the struct.
     var facilityTypes: [Facility] {
         facilities.map(Facility.init)
     }
-    
+
     // When static let is used for properties, Swift automatically makes
     // them lazy, they don't get created until they are used. What this means
     // in this case is that when we try to read Resord.example, Swift will

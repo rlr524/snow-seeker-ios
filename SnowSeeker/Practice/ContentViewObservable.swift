@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ContentViewObservable.swift
 //  SnowSeeker
 //
 //  Created by Rob Ranf on 5/5/25.
@@ -15,7 +15,7 @@ class Player {
 
 struct HighScoreView: View {
     @Environment(Player.self) var player
-    
+
     var body: some View {
         @Bindable var player = player
         Stepper("High score: \(player.highScore)", value: $player.highScore)
@@ -24,7 +24,7 @@ struct HighScoreView: View {
 
 struct ContentViewObservable: View {
     @State private var madison = Player()
-    
+
     var body: some View {
         VStack {
             Text("Welcome")

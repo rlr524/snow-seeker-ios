@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SkiDetailsView: View {
     let resort: Resort
-    
+
     var body: some View {
         Group {
             VStack {
@@ -18,7 +18,7 @@ struct SkiDetailsView: View {
                 Text("\(resort.elevation)m")
                     .font(.title3)
             }
-            
+
             VStack {
                 Text("Snow")
                     .font(.caption.bold())
