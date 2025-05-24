@@ -7,10 +7,17 @@
 
 import SwiftUI
 
+enum SortType {
+    // Backticks allow use of a keyword as a string literal
+    case `default`, alphabetical, country, runs
+}
+
 struct ContentView: View {
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     @State private var searchText = ""
     @State private var favorites = Favorites()
+    @State private var sortType = SortType.default
+    @State private var showingSortOptions = false
 
     var filteredResults: [Resort] {
         if searchText.isEmpty {
@@ -19,10 +26,23 @@ struct ContentView: View {
             resorts.filter { $0.name.localizedStandardContains(searchText) }
         }
     }
+    
+    var sortedResults: [Resort] {
+        switch sortType {
+        case .default:
+            filteredResults
+        case .alphabetical:
+            filteredResults.sorted { $0.name < $1.name }
+        case .country:
+            filteredResults.sorted { $0.country < $1.country }
+        case .runs:
+            filteredResults.sorted { $0.runs > $1.runs }
+        }
+    }
 
     var body: some View {
         NavigationSplitView {
-            List(filteredResults) { resort in
+            List(sortedResults) { resort in
                 NavigationLink(value: resort) {
                     HStack {
                         Image(resort.country)
@@ -55,6 +75,17 @@ struct ContentView: View {
                 ResortView(resort: resort)
             }
             .searchable(text: $searchText, prompt: "Search for a resort")
+            .toolbar {
+                Button("Change sort order", systemImage: "arrow.up.arrow.down") {
+                    showingSortOptions = true
+                }
+            }
+            .confirmationDialog("Sort order", isPresented: $showingSortOptions) {
+                Button("Default") { sortType = .default}
+                Button("Alphabetical") { sortType = .alphabetical }
+                Button("By Country") { sortType = .country }
+                Button("Number of Runs") { sortType = .runs }
+            }
         } detail: {
             WelcomeView()
         }

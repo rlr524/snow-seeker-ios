@@ -18,10 +18,19 @@ struct ResortView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                Image(decorative: resort.id)
-                    .resizable()
-                    .scaledToFit()
-
+                ZStack(alignment: .bottomTrailing) {
+                    Image(decorative: resort.id)
+                        .resizable()
+                        .scaledToFit()
+                    
+                    Text("Credit: \(resort.imageCredit)")
+                        .padding(3)
+                        .background(.black.opacity(0.7))
+                        .foregroundStyle(.white)
+                        .font(horizontalSizeClass == .compact ? .caption : .callout)
+                        .offset(x: -5, y: -5) // Always do the offset after you have finished styling the content
+                }
+                    
                 HStack {
                     if horizontalSizeClass == .compact
                         && dynamicTypeSize > .large
